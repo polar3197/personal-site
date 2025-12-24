@@ -1,25 +1,38 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: rgb(247, 247, 238);
+  color: black;
+
+  padding: 20vw 10vh;
+  border: 1px solid black;
 }
 
-.App-header {
-  padding: 2rem;
+.Sidebar {
+  width: 20vw;
+  height: 100%;
+  border: 1px solid black;
 }
 
-.App-header h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 60vw;
+  height: 100%;
+  border: 1px solid black;
 }
 
-.App-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+.Header {
+  width: 60vw;
+  border: 1px solid black;
 }
 
