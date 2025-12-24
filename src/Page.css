@@ -1,0 +1,30 @@
+.Project-list {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+
+.Header {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    align-items: left;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    /* width: 90%; */
+    /* border: 1px black solid; */
+}
+
+.Page-Content-inner {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px black solid; */
+}
+  
