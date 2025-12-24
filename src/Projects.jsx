@@ -8,9 +8,7 @@ const Projects = () => {
         <div className="Header">
             Projects
         </div>
-        <div className="Page-Content-inner">
-            
-        </div>
+        <div className="Page-Content-inner"></div>
         </>
     );
 };

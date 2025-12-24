@@ -20,6 +20,7 @@
   width: 70vw;
   padding: 0 2vw;
   transform: translateX(-50px); /* Shift left by half the sidebar width */
+  transform: translateY(-10%);
 
   /* border: 1px rgb(156, 20, 20) solid; */
 }
@@ -67,7 +68,7 @@
 
   margin: 5px;
 
-  /* transform: translateY(%); */
+  transform: translateY(10%);
 
   /* border: 1px rgb(0, 0, 0) solid; */
 }
