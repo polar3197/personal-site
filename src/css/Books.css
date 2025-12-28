@@ -1,0 +1,61 @@
+.Book-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Book-list-elem {
+    display: flex;
+    flex-direction: row;
+
+
+    align-items: left;
+    justify-content: left;
+    border: 1px black solid;
+}
+
+#BookSgn {
+    background-color: bisque;
+}
+
+#SubmitBtn {
+    background-color: lightgreen;
+}
+
+.Book-icon {
+    flex: 0 0 auto;
+    width: 100px;
+    aspect-ratio: 13 / 21;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border: 1px black solid;
+    overflow: hidden;
+}
+
+.Book-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Book-review {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    /* border: 1px black solid; */
+}
+
+.Book-review p {
+    margin: 0;
+    text-align: left;
+}
+
+.Book-review p:not(:last-child) {
+    margin-bottom: 5px;
+}

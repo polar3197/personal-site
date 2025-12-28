@@ -1,0 +1,134 @@
+.Page {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    /* background-color: blanchedalmond; */
+}
+
+.Header {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    align-items: left;
+    display: flex;
+    align-items: first baseline;
+
+    padding: 0px 40px;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    /* width: 90%; */
+    /* border: 1px black solid; */
+}
+
+.Page-Content-inner {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    overflow-y: auto;
+    /* border: 1px black solid; */
+}
+
+.Page-Content-inner.home-page {
+    display: block;
+    padding: 0px 40px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+}
+
+.Page-Content-inner.home-page .profile-picture {
+    float: right;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 0 15px 15px;
+    shape-outside: margin-box;
+}
+
+.Page-Content-inner.home-page p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.Project-list {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.Project-list-elem {
+    flex: 0 0 auto;
+    min-height: 150px;
+    width: 100%;
+    max-width: 100%;
+    background-color: rgb(255, 253, 236);
+    border: 1px black solid;
+    padding: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.Project-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.Project-description {
+    flex: 1;
+    margin: 0;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.Project-image {
+    flex: 0 0 auto;
+    width: 150px;
+    min-width: 100px;
+    max-width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}

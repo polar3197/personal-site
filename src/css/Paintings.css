@@ -1,0 +1,32 @@
+.Image-board {
+    display: grid; 
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(72, 1fr);
+    gap: 5px;
+    border: 1px black solid;
+    width: 100%;
+    height: 100%;
+}
+
+.Painting {
+    border: 1px black solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Painting img {
+    transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
+    cursor: pointer;
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.Painting:hover {
+    transform: scale(1.1);
+}
