@@ -1,5 +1,7 @@
 // src/pages/Projects.jsx
 import React from 'react';
+import '../css/Page.css'
+import '../css/Books.css'
 import muniMapImage from '../../assets/imgs/muni-map.png';
 
 const ProjectCard = ({ title, description, image, imageAlt }) => {
@@ -32,34 +34,35 @@ const Projects = () => {
         {
             id: 2,
             title: 'Agentic LLM Interface to MUNI Map',
-            description: 'Speeding up OpenAI interfacing and tool use for qurying and navigating live MUNI Map.',
+            description: 'Speeding up OpenAI interfacing and adding tool use for qurying and navigating live MUNI Map.',
             image: 'tbd',
             imageAlt: 'Project'
         },
-        {
-            id: 3,
-            title: 'Local LLM Server',
-            description: 'Local optimized LLM model running on Mac Studio.',
-            image: 'TBD',
-            imageAlt: 'Project'
-        },
-        {
-            id: 4,
-            title: 'TBD',
-            description: 'TBD.',
-            image: 'TBD',
-            imageAlt: 'Project'
-        },
-        {
-            id: 5,
-            title: 'TBD',
-            description: 'TBD.',
-            image: 'TBD',
-            imageAlt: 'Project'
-        }
+        // {
+        //     id: 3,
+        //     title: 'Local LLM Server',
+        //     description: 'Local optimized LLM model running on Mac Studio.',
+        //     image: 'TBD',
+        //     imageAlt: 'Project'
+        // },
+        // {
+        //     id: 4,
+        //     title: 'TBD',
+        //     description: 'TBD.',
+        //     image: 'TBD',
+        //     imageAlt: 'Project'
+        // },
+        // {
+        //     id: 5,
+        //     title: 'TBD',
+        //     description: 'TBD.',
+        //     image: 'TBD',
+        //     imageAlt: 'Project'
+        // }
     ];
 
     return (
+        <>
         <div className='Page'>
             <div className="Header">
                 Projects
@@ -78,6 +81,7 @@ const Projects = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

@@ -38,7 +38,7 @@ const Books = () => {
             title: "As I Lay Dying",
             author: "William Faulkner",
             cover: AILD ,
-            summary: "Stream of consciousness; magical, southern, gothic tragedy."
+            summary: "Stream of consciousness, magical, southern, gothic tragedy."
         },
         {
             id: 2,
@@ -62,7 +62,7 @@ const Books = () => {
             Books
         </div>
         <div className="Book-suggestions">
-            <p>Submit a book suggestion! Completely anonymous</p>
+            <p>Submit a book suggestion! (It's completely anonymous)</p>
             <input id="bookSgn" type='text'/>
             <button id="submitBtn">Submit</button>
         </div>

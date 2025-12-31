@@ -5,10 +5,10 @@ import profilePic from '../../assets/imgs/profile.png';
 const Home = () => {
   return (
     <>
-    <div className="Header">
+      <div className="Header">
         About Me
-    </div>
-    <div className="Page-Content-inner home-page">
+      </div>
+      <div className="Page-Content-inner home-page">
         <img 
           src={profilePic} 
           alt="Charlie Cooper" 
@@ -20,10 +20,10 @@ const Home = () => {
         <p>
           I enjoy reading, fullstack programming, running and acrylic painting. 
         </p>
-        <p>
+        {/* <p>
           I have some of my most recent paintings in the gallery, and some book reviews under books.
-        </p>
-    </div>
+        </p> */}
+      </div>
     </>
   );
 };
