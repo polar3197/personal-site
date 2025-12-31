@@ -19,11 +19,11 @@ function App() {
               <Home />
             </Layout>
           } />
-          <Route path="/projects" element={
+          {/* <Route path="/projects" element={
             <Layout>
               <Projects />
             </Layout>
-          } />
+          } /> */}
           <Route path="/books" element={
             <Layout>
               <Books />
@@ -36,7 +36,7 @@ function App() {
           } />
           
           {/* Routes without sidebar */}
-          <Route path="/blog" element={
+          {/* <Route path="/blog" element={
             <Layout>
               <Blog />
             </Layout>
@@ -45,7 +45,7 @@ function App() {
             <Layout showSidebar={false}>
               <BlogPostDetail />
             </Layout>
-          } />
+          } /> */}
           {/* <Route path="/gallery" element={
             <Layout showSidebar={false}>
               <Gallery />

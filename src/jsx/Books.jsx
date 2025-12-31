@@ -61,11 +61,11 @@ const Books = () => {
         <div className="Header">
             Books
         </div>
-        <div className="Book-suggestions">
+        {/* <div className="Book-suggestions">
             <p>Submit a book suggestion! (It's completely anonymous)</p>
             <input id="bookSgn" type='text'/>
             <button id="submitBtn">Submit</button>
-        </div>
+        </div> */}
         <div className="Page-Content-inner">
             <div className="Project-list">
                 {books.map(book => (
