@@ -4,7 +4,7 @@ const Sidebar = () => {
   // Define menu items as an array of objects
   const menuItems = [
     { id: 1, label: 'Home', href: '/' },
-    // { id: 2, label: 'Projects', href: '/projects' },
+    { id: 2, label: 'Projects', href: '/projects' },
     // { id: 3, label: 'Blog', href: '/blog' },
     // { id: 4, label: 'Gallery', href: '/gallery' },
     { id: 5, label: 'Books', href: '/books' },

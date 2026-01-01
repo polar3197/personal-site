@@ -19,11 +19,11 @@ function App() {
               <Home />
             </Layout>
           } />
-          {/* <Route path="/projects" element={
+          <Route path="/projects" element={
             <Layout>
               <Projects />
             </Layout>
-          } /> */}
+          } />
           <Route path="/books" element={
             <Layout>
               <Books />
