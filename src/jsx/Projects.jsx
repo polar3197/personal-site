@@ -71,49 +71,26 @@ const Projects = () => {
             imageAlt: 'Project',
             tags: ['Claude SDK', 'FastAPI', 'Tools'],
         }
-        // {
-        //     id: 3,
-        //     title: 'Local LLM Server',
-        //     description: 'Local optimized LLM model running on Mac Studio.',
-        //     image: 'TBD',
-        //     imageAlt: 'Project'
-        // },
-        // {
-        //     id: 4,
-        //     title: 'TBD',
-        //     description: 'TBD.',
-        //     image: 'TBD',
-        //     imageAlt: 'Project'
-        // },
-        // {
-        //     id: 5,
-        //     title: 'TBD',
-        //     description: 'TBD.',
-        //     image: 'TBD',
-        //     imageAlt: 'Project'
-        // }
     ];
 
     return (
         <>
-        <div className='Page'>
-            <div className="Header">
-                Projects
-            </div>
-            <div className="Page-Content-inner">
-                <div className='Project-list'>
-                    {projects.map(project => (
-                        <ProjectCard
-                            key={project.id}
-                            title={project.title}
-                            description={project.description}
-                            image={project.image}
-                            imageAlt={project.imageAlt}
-                            tags={project.tags}
-                            link={project.link}
-                        />
-                    ))}
-                </div>
+        <div className="Header">
+            Projects
+        </div>
+        <div className="Page-Content-inner">
+            <div className='Project-list'>
+                {projects.map(project => (
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        image={project.image}
+                        imageAlt={project.imageAlt}
+                        tags={project.tags}
+                        link={project.link}
+                    />
+                ))}
             </div>
         </div>
         </>

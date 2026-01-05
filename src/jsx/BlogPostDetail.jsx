@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from './data/blogPosts';
+import '../css/Post.css';
 
 const BlogPostDetail = () => {
   const { slug } = useParams();
@@ -7,22 +8,34 @@ const BlogPostDetail = () => {
 
   if (!post) {
     return (
-      <div className='Page'>
-        <div className="Header">
+      <>
+        <div className="Post-header">
           Post Not Found
         </div>
-        <div className="Page-Content-inner">
+        <div className="Post-content">
           <p>The blog post you're looking for doesn't exist.</p>
-          <Link to="/blog">← Back to Blog</Link>
+          <p><Link to="/blog">← Back to Blog</Link></p>
         </div>
-      </div>
+      </>
     );
   }
 
   return (
-    <div className='Page'>
-      hello
-    </div>
+    <>
+      {/* <p><Link to="/blog">← Back to Blog</Link></p> */}
+      <div className="Post-header">
+        <div style={{ fontSize: '36px' }}>{post.title}</div>
+        <p>{post.date}</p>
+      </div>
+      <div className="Post-content">
+        {post.content.split('\n\n').map((paragraph, index) => (
+          <>
+          <p key={index}>{paragraph}</p>
+          <br></br>
+          </>
+        ))}
+      </div>
+    </>
   );
 };
 

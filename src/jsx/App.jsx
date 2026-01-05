@@ -11,48 +11,60 @@ import Layout from './components/Layout';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      {/* <div className="App"> */}
         <Routes>
           {/* Routes with sidebar */}
           <Route path="/" element={
-            <Layout>
-              <Home />
-            </Layout>
+            <div className="Page">
+              <Layout>
+                <Home />
+              </Layout>
+            </div>
           } />
           <Route path="/projects" element={
-            <Layout>
-              <Projects />
-            </Layout>
+            <div className="Page">
+              <Layout>
+                <Projects />
+              </Layout>
+            </div>
           } />
           <Route path="/books" element={
-            <Layout>
-              <Books />
-            </Layout>
+            <div className="Page">
+              <Layout>
+                <Books />
+              </Layout>
+            </div>
           } />
           <Route path="/resume" element={
-            <Layout>
-              <Resume />
-            </Layout>
+            <div className="Page">
+              <Layout>
+                <Resume />
+              </Layout>
+            </div>
           } />
           
           {/* Routes without sidebar */}
-          {/* <Route path="/blog" element={
-            <Layout>
-              <Blog />
-            </Layout>
+          <Route path="/blog" element={
+            <div className="Page">
+              <Layout>
+                <Blog />
+              </Layout>
+            </div>
           } />
           <Route path="/blog/:slug" element={
+            <div className="Post-wrapper">
             <Layout showSidebar={false}>
               <BlogPostDetail />
             </Layout>
-          } /> */}
+            </div>
+          } />
           {/* <Route path="/gallery" element={
             <Layout showSidebar={false}>
               <Gallery />
             </Layout>
           } /> */}
         </Routes>
-      </div>
+      {/* </div> */}
     </BrowserRouter>
   )
 }
