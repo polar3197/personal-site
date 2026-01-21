@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <div className="Header">
-        About Me
+        <div style={{transform: 'translateX(30%)'}}>About Me</div>
       </div>
       <div className="Page-Content-inner home-page">
         <img 

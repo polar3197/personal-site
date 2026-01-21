@@ -1,21 +1,18 @@
 
-
 .Post-wrapper {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
 
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    gap: 15px;
-    overflow-y: auto;
-    /* background-color: blanchedalmond; */
+    gap: 5px;
 }
 
 .Post-header {
     width: 100%;
     font-size: 20px;
+
     font-family: 'Soria', serif;
     display: flex;
     justify-content: space-between;
@@ -24,21 +21,48 @@
 }
 
 .Post-content {
-    flex: 1;
     position: relative;
     top: 0;
     left: 0;
     /* border: 1px black solid; */
-    height: 100%;
-    width: 80%;
-    padding: 40px 0px;
-    font-size: 20px;;
-    font-family: sans-serif;
+    width: 90%;
+    padding: 15px 0px;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Lato', Verdana, sans-serif;
+    word-wrap: break-word;
 }
 
 .blog-card {
+    display: block;
     width: 100%;
-    min-height: 0;
+    min-height: 150px;
+    padding: 15px;
+    background-color: rgb(255, 253, 236);
+    border: 1px solid black;
     text-decoration: none;
     color: inherit;
 }
+
+.blog-card:hover {
+    background-color: rgb(255, 222, 145);
+}
+
+.blog-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.blog-card p {
+    margin: 0 0 10px 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.blog-card-tags {
+    font-weight: bold;
+}
+
+.markdown-content a:visited {
+  color: blue; /* or a specific color */
+}  */

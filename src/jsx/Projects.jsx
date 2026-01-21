@@ -13,8 +13,6 @@ const ProjectCard = ({ title, description, image, imageAlt, tags, link }) => {
                 </div>
                 <div className="Project-description">
                     {description}
-                    <br></br>
-                    <br></br>
                     <p>
                         <b>Tags: </b> 
                         {tags.map((tag, index) => (

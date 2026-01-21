@@ -19,14 +19,13 @@
 
 .Page-Content-inner {
     flex: 1;
-    height: 100%;
     width: 100%;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    
+
     overflow-y: auto;
     /* border: 1px black solid; */
 }
@@ -63,7 +62,7 @@
     gap: 5px;
 
     padding: 5px;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
 }
 

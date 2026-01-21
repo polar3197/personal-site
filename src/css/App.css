@@ -38,16 +38,18 @@
 }
 
 .Post-sidebar {
-  width: 100px;
-  /* flex-shrink: 0; */
+  width: 80px;
+  flex-shrink: 0;
   display: flex;
   text-align: center;
   flex-direction: column;
-  border: 1px solid black;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: flex-start;
+  justify-content: flex-start;
+  transform: translateY(45px);
+  /* padding-top: 20px; */
+  border-radius: 50%;
+  border: 1px, black, solid;
   /* border-right: 1px solid rgb(0, 0, 0); */
-  /* transform: translateY(-10%); */
 }
 
 .Sidebar-nav {
@@ -55,7 +57,6 @@
   flex-direction: column;
   width: 100%;
   gap: 0.5rem;
-  
 }
 
 .Sidebar-menu-item {
@@ -69,6 +70,14 @@
 
 .Sidebar-menu-item:hover {
   background-color: rgba(95, 179, 115, 0.888);
+}
+
+.Post-sidebar .Sidebar-menu-item {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Page-Content {
@@ -86,6 +95,21 @@
   transform: translateY(13%);
 
   /* border: 1px rgb(0, 0, 0) solid; */
+}
+
+.Post-wrapper .Site-wrapper {
+  height: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  padding: 70px 0;
+}
+
+.Post-wrapper .Page-Content {
+  height: auto;
+  justify-content: flex-start;
+  transform: none;
+  padding-top: 20px;
+  padding-right: 80px;
 }
 
 

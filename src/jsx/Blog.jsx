@@ -1,31 +1,16 @@
 // src/pages/Projects.jsx
 import { Link } from 'react-router-dom';
-import "../css/Page.css"
-import "../css/Post.css"
-import blogPosts from './data/blogPosts.js';
+import "../css/Page.css";
+import "../css/Post.css";
+import blogPosts from './data/blogPosts.jsx';
 
-const BlogPost = ({ title, description, tags, slug }) => {
-    return (
-        <Link to={`/blog/${slug}`} className="blog-card">
-            <div className='Project-list-elem'>
-                <div className="Project-content">
-                    <div className="Project-title">
-                        {title}
-                    </div>
-                    <div className="Project-description">
-                        <p>{description}</p>
-                        <br></br>
-                        <br></br>
-                        <p><b>Topics:</b> {tags.map(tag =>(
-                                <i>{tag}, </i>
-                            ))}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </Link>
-    );
-};
+const BlogPost = ({ title, description, tags, slug }) => (
+    <Link to={`/blog/${slug}`} className="blog-card">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p className="blog-card-tags"># {tags.join(', ')}</p>
+    </Link>
+);
 
 const Blog = () => {
     const posts = blogPosts;

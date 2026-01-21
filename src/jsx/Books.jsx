@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Page.css'
 import '../css/Books.css'
-import booksList from './data/booksList.js';
+import booksList from './data/booksList.jsx';
 
 const Book = ({ id, title, author, summary, image }) => {
     return (
