@@ -61,14 +61,14 @@ const Projects = () => {
             tags: ['GTFS', 'PostgreSQL', 'SQLAlchemy', 'FastAPI', 'S3'],
             link: 'https://github.com/polar3197/muni'
         },
-        {
-            id: 3,
-            title: 'Agentic LLM Interface to MUNI Map',
-            description: 'Speeding up OpenAI interfacing and adding tool use for qurying and navigating live MUNI Map.',
-            image: 'tbd',
-            imageAlt: 'Project',
-            tags: ['Claude SDK', 'FastAPI', 'Tools'],
-        }
+        // {
+        //     id: 3,
+        //     title: 'Sentence-informed text layer in PDF.js',
+        //     description: 'fork in progress',
+        //     image: 'tbd',
+        //     imageAlt: 'Project',
+        //     tags: ['PDF.js', 'JS', 'OSS'],
+        // }
     ];
 
     return (

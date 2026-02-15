@@ -1,32 +1,87 @@
+.Gallery-page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.Gallery-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f7;
+}
+
+.Gallery-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid #d0d0d0;
+    background: #ffffff;
+}
+
+.Gallery-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.Gallery-exit-button {
+    text-decoration: none;
+    color: #111;
+    border: 1px solid #111;
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.Gallery-exit-button:hover {
+    background: #111;
+    color: #fff;
+}
+
+.Gallery-content {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    padding: 0;
+}
+
 .Image-board {
-    display: grid; 
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(72, 1fr);
-    gap: 5px;
-    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.Justified-row {
+    width: 100%;
+    display: flex;
+    gap: 2px;
 }
 
 .Painting {
-    border: 1px black solid;
-    width: 100%;
-    height: 100%;
+    border: 0;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
 }
 
 .Painting img {
-    transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
-    cursor: pointer;
-
+    transition: transform 0.3s ease;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
     display: block;
 }
 
-/* .Painting:hover {
-    transform: scale(1.1);
-} */
+@media (max-width: 900px) {
+    .Gallery-toolbar {
+        padding: 10px 12px;
+    }
+}

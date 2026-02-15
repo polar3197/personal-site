@@ -10,7 +10,7 @@ export const Books = [
         title: "The Letters of Vincent van Gogh",
         author: "Vincent van Gogh",
         cover: TLVV,
-        summary: "Collected letters of a fastidiously observed life of an artist struggling to justify his artistic compulsion."},
+        summary: "Collected letters of a fastidiously observed life by an artist struggling to justify his artistic compulsion."},
     {
         id: 1,
         title: "As I Lay Dying",

@@ -1,35 +1,45 @@
-
 .Post-wrapper {
     width: 100%;
-    min-height: 100vh;
-
+    height: 100vh; /* Change from min-height to height */
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    overflow-y: auto;
+    box-sizing: border-box; /* ADD THIS */
 }
 
 .Post-header {
     width: 100%;
     font-size: 20px;
-
     font-family: 'Soria', serif;
     display: flex;
     justify-content: space-between;
     align-items: first baseline;
     border-bottom: 1px black solid;
+    flex-shrink: 0; /* ADD THIS - prevents header from shrinking */
 }
 
 .Post-content {
-    position: relative;
-    top: 0;
-    left: 0;
-    /* border: 1px black solid; */
     width: 90%;
     padding: 15px 0px;
     font-size: 20px;
     font-family: 'Open Sans', 'Lato', Verdana, sans-serif;
     word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    flex: 1; /* ADD THIS - allows content to grow */
+    overflow-y: auto; /* ADD THIS - scroll within content only */
+}
+
+.Post-content pre code {
+  white-space: pre;
+  overflow-x: auto;
+  display: block;
+}
+
+.Post-content pre {
+  overflow-x: auto;
 }
 
 .blog-card {

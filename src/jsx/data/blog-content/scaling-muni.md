@@ -20,7 +20,7 @@ In less than a month's time (by mid february 2026) I want everything automated, 
    - number of unique users/traffic per week
    - probably more...
 
-5. Research NGINX and Cloudflared Tunnel and decide on if-I-should/how-to **migrate off of Vercel**
+5. Research NGINX and Cloudflared Tunnel and decide if I can get speed ups in this service area
 
 6. Implement **login and auth** for users
 

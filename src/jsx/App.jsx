@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-// import Gallery from './Gallery';
+import Gallery from './Gallery';
 import Resume from './Resume';
 import Projects from './Projects';
 import Books from './Books';
@@ -58,11 +58,11 @@ function App() {
             </Layout>
             </div>
           } />
-          {/* <Route path="/gallery" element={
-            <Layout showSidebar={false}>
+          <Route path="/gallery" element={
+            <div className="Gallery-page">
               <Gallery />
-            </Layout>
-          } /> */}
+            </div>
+          } />
         </Routes>
       {/* </div> */}
     </BrowserRouter>
